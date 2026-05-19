@@ -9,10 +9,14 @@ const  creat = (user) => {
     return user
 }
 
-
+const findById = (id) => {
+    return userList.find(user => user.id === id)
+    
+}
 
 
 module.exports = {
     findAll,
-    creat
+    creat,
+    findById
 }

@@ -14,6 +14,8 @@ app.get("/", callbackDaRaiz)
 
 app.get("/users", userContrller.getAllUsers)
 
+app.get("/users/:id", userContrller.getUserById)
+
 app.post("/users", userContrller.createUser )
 
 module.exports = app
