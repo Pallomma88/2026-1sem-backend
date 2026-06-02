@@ -10,12 +10,12 @@ collection:
   - url: http://localhost:3000/
     name: Teste API
     meta:
-      id: req_44f4a91ca3f643fba71150d8425f934f
-      created: 1778539602555
-      modified: 1778540039061
+      id: req_9d64add54ece472db18cd568260d43c8
+      created: 1778539615737
+      modified: 1778540019959
       isPrivate: false
       description: ""
-      sortKey: -1778539602555
+      sortKey: -1778539615737
     method: GET
     headers:
       - name: User-Agent
@@ -33,12 +33,12 @@ collection:
   - url: http://localhost:3000/users
     name: Listagem usuários
     meta:
-      id: req_ad3c3a64e1c143808be60b9b645fd360
-      created: 1778540176779
-      modified: 1778540205827
+      id: req_520cc654681c4522b5328168f193ae39
+      created: 1778540138943
+      modified: 1779757337666
       isPrivate: false
       description: ""
-      sortKey: -1778539602505
+      sortKey: -1778539615687
     method: GET
     headers:
       - name: User-Agent
@@ -56,12 +56,12 @@ collection:
   - url: http://localhost:3000/users
     name: Criar usuário
     meta:
-      id: req_7627a92ca4064caea4218d46a5359039
-      created: 1778540816588
-      modified: 1778541522314
+      id: req_a51f9869f6f74280a7f571edc4a24703
+      created: 1778540814093
+      modified: 1778541512408
       isPrivate: false
       description: ""
-      sortKey: -1778539602455
+      sortKey: -1778539615637
     method: POST
     body:
       mimeType: application/json
@@ -85,15 +85,69 @@ collection:
         store: true
       rebuildPath: true
   - url: http://localhost:3000/users/1
-    name: busca usuario por id
+    name: Busca usuário por ID
     meta:
-      id: req_26c486355d17476f8f9a569aba2f5aea
-      created: 1779150106123
-      modified: 1779152187241
+      id: req_8805ca3201574dda892926bdea282e68
+      created: 1779150046635
+      modified: 1779750793930
       isPrivate: false
       description: ""
-      sortKey: -1778539602480
+      sortKey: -1778539615662
     method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/users/1
+    name: Atualizar usuário
+    meta:
+      id: req_af0bbcee60ac4b81a8bb24492d704f3a
+      created: 1779750713599
+      modified: 1779750768564
+      isPrivate: false
+      description: ""
+      sortKey: -1778539615587
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Manoel"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/users/1
+    name: Deletar usuário
+    meta:
+      id: req_b590d99c20b44ffa9b68c3e90e94435b
+      created: 1779757305899
+      modified: 1779757318591
+      isPrivate: false
+      description: ""
+      sortKey: -1778539615487
+    method: DELETE
     headers:
       - name: User-Agent
         value: insomnia/12.1.0
@@ -111,12 +165,12 @@ cookieJar:
   name: Default Jar
   meta:
     id: jar_99d30891da4bdcebc63947a8fc17f076de878684
-    created: 1779142624939
-    modified: 1779142624939
+    created: 1780352786660
+    modified: 1780352786660
 environments:
   name: Base Environment
   meta:
     id: env_99d30891da4bdcebc63947a8fc17f076de878684
-    created: 1779142624935
-    modified: 1779142624935
+    created: 1780352786658
+    modified: 1780352786658
     isPrivate: false

@@ -1,11 +1,11 @@
-   const listaUsuarios = [
+const listaUsuarios = [
     {
         id: 1,
-        name:"Pallomma"
+        name: "João"
     },
     {
         id: 2,
-        name:"Kenia"
+        name: "Maria"
     },
 ]
 
